@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3 | CSS Grid</title>
+		<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* Put styles for CSS Grid here for the Lab */
+			.container {
+				width: 96%;
+				margin: 30px auto 0px auto;
+				display: grid;
+				gap: 5px;
+				grid-template-areas: 
+					"Branding Advertising-1 Advertising-1 Advertising-1 Search"
+					"Branding Global-Nav Global-Nav Global-Nav Global-Nav"
+					"Local-Nav Top-Story Top-Story Top-Story Advertising-2"
+					"Local-Nav Global-News National-News Local-News Advertising-2"
+					"Local-Nav Global-News National-News Local-News Market-Info"
+					"Footer Footer Footer Footer Footer";
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 100px 100px 100px 100px 100px 100px;
+			}
+			.item-a {
+				grid-area: Branding;
+				background-color: rgb(222, 185, 184);
+			}
+			.item-b {
+				grid-area: Global-Nav; 
+				background-color: rgb(241, 213, 184);
+			}
+			.item-c {
+				grid-area: Local-Nav; 
+				background-color: rgb(202, 192, 216);
+			}
+			.item-d {
+				grid-area: Footer; 
+				background-color: rgb(252, 252, 182);
+			}
+			.item-e {
+				grid-area: Top-Story; 
+				background-color: rgb(195, 189, 154);
+			}
+			.item-f {
+				grid-area: Global-News; 
+				background-color: rgb(203, 157, 210);
+			}
+			.item-g {
+				grid-area: National-News; 
+				background-color: rgb(235, 193, 150);
+			}
+			.item-h {
+				grid-area: Local-News; 
+				background-color: rgb(159, 203, 218);
+			}
+			.item-i {
+				grid-area: Search; 
+				background-color: rgb(202, 216, 238);
+			}
+			.item-j {
+				grid-area: Market-Info; 
+				background-color: rgb(146, 138, 91);
+			}
+			.item-k {
+				grid-area: Advertising-1; 
+				background-color: rgb(197, 213, 161);
+			}
+			.item-l {
+				grid-area: Advertising-2; 
+				background-color: rgb(197, 213, 161);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-a">
+				<h2>Branding</h2>
+			</div>
+			<div class="item item-b">
+				<h2>Global Nav</h2>
+			</div>
+			<div class="item item-c">
+				<h2>Local Nav</h2>
+			</div>
+			<div class="item item-d">
+				<h2>Footer</h2>
+			</div>
+			<div class="item item-e">
+				<h2>Top Story</h2>
+			</div>
+			<div class="item item-f">
+				<h2>Global News</h2>
+			</div>
+			<div class="item item-g">
+				<h2>National News</h2>
+			</div>
+			<div class="item item-h">
+				<h2>Local News</h2>
+			</div>
+			<div class="item item-i">
+				<h2>Search</h2>
+			</div>
+			<div class="item item-j">
+				<h2>Market Info</h2>
+			</div>
+			<div class="item item-k">
+				<h2>Advertising 1</h2>
+			</div>
+			<div class="item item-l">
+				<h2>Advertising 2</h2>
+			</div>
+		</div><!-- .container -->
+	</body>
+</html>
